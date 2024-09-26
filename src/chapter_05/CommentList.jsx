@@ -19,8 +19,8 @@ const comments = [
 const CommentList = () => {
   return (
     <div>
-      {comments.map((comment) => (
-        <Comment name={comment.name} comment={comment.comment} />
+      {comments.map((comment, index) => (
+        <Comment key={index} name={comment.name} comment={comment.comment} />
       ))}
     </div>
   );

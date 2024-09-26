@@ -38,6 +38,11 @@ export default class NotificationList extends Component {
           notifications: notifications
         });
       } else {
+        /*
+        this.setState({
+          notifications: []
+        });
+        */
         clearInterval(timer);
       }
     }, 1000);
